@@ -3,7 +3,6 @@
     src: url("bahnschrift.ttf") format("truetype"),
          url("bahnschrift.woff") format("woff");
     font-weight: 300;
-    font-display: swap;
 }
 
 body {
