@@ -1,0 +1,212 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <script>
+    function scrollWindow() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <title>Computer Science Website</title>
+  <link rel="shortcut icon" href="../icon.png">
+</head>
+<body>
+  <div class="title">Unit One</div>
+  <div class="title2">Hexadecimal</div>
+  <a href="unitonetwo.html"><input class="button button1" type="button" value="Unit 1.2" /></a>
+  <h1 class="heading">Denary Recap</h1>
+  <p class="paragraph">Denary is the number system that we use as humans in everyday life. It is base 10 which means that each digit value going left increases by a multiple of 10. The denary system uses the digits 0 - 9.</p>
+  <table style="width: 38vw; float: right;">
+    <tr>
+      <th>Denary</th>
+      <th>Binary</th>
+      <th>Hexadecimal</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0001</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0010</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0011</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0100</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0101</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0110</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0111</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1000</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1001</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1010</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1011</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1100</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1101</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1110</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1111</td>
+      <td>F</td>
+    </tr>
+  </table>
+  <h2 class="heading">Hexadecimal</h1>
+  <p class="paragraph">Hexadecimal is base 16 which means that each digit value going left increases by a multiple of 16. The hexadecimal system uses the digits 0 - F.</p>
+  <table style="width: 250px; float: right;">
+    <tr>
+	  <th>16s</th>
+	  <th>1s</th>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>A</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <td>3×16</td>
+	  <td>10×1</td>
+	</tr>
+	<tr>
+	  <td>48</td>
+	  <td>10</td>
+	</tr>
+  </table>
+  <h2 class="heading">Converting from Hexadecimal to Denary</h2>
+  <p class="paragraph">When converting hexadecimal to denary, multiply the unit by the digit value. For '3A' you would multiply 3×16 and 10×1 as 'A' represents '10' in hex. After multiplying the numbers add the products together to get your answer. In this case you would add together 48+10, this would give you 58.</p>
+  <br><br><br><br><br><br><br><br><br>
+  <table style="width: 250px; float: right;">
+    <tr>
+	  <td>58</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <th>16s</th>
+	  <th>1s</th>
+	</tr>
+	<tr>
+	  <td>58÷16</td>
+	  <td>10÷1</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>A</td>
+	</tr>
+  </table>
+  <h2 class="heading">Converting from Denary to Hexadecimal</h2>
+  <p class="paragraph">When converting denary to hexadecimal, divide your number by the units, going left to right, until there is nothing left. For each calculation use the remainder of the previous. After these divisions convert any 2 digit numbers into hex A - F.</p>
+  <p class="paragraph">If you end up with a number which is 16 or greater you have gone wrong somewhere.</p>
+  <br><br><br><br><br>
+  <table style="width: 250px; float: right;">
+    <tr>
+	  <th>16s</th>
+	  <th>1s</th>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>A</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <td>0011</td>
+	  <td>1010</td>
+	</tr>
+  </table>
+  <h2 class="heading">Converting from Hexadecimal to 8-Bit Binary</h2>
+  <p class="paragraph">When converting hexadecimal to binary, convert each hex digit into a denary number so 3 becomes 3 and A becomes 10. Then convert each of those numbers to a Nibble and finally add those nibbles together end on end to get a Byte. So 3A would become 00111010.</p>
+  <br><br><br><br>
+  <table style="width: 250px; float: left;">
+    <tr>
+	  <td>0011</td>
+	  <td>1010</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>A</td>
+	</tr>
+	<tr>
+	  <th>16s</th>
+	  <th>1s</th>
+	</tr>
+  </table>
+  <h2 class="heading">Converting from 8-Bit Binary to Hexadecimal</h2>
+  <p class="paragraph">When converting binary to hexadecimal split the Byte you are converting into 2 Nibbles and convert those Nibbles into denary numbers. Then convert these denary numbers into hex and put them back together.</p>
+  <br><br><br><br><br><br>
+  <input class="button button1" type="button" onclick="scrollWindow()" value="Scroll to Top" />
+  <div id="navbar">
+    <ul>
+      <li><a href="../home.html"><img src="../homeicon.png" class="home" style="height: 14px; filter: invert(100%);"> Home</a></li>
+      <li><a href="gcse.html" class="active">GCSE</a></li>
+      <li><a href="../alevel/alevel.html">A Level</a></li>
+      <li style="float: right"><a href="../about.html">About</a></li>
+      <li style="float: right"><a href="../search.html">Search</a></li>
+      <li style="float: right"><a href="../interactiveapps.html">Interactive Apps</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <script>
+    function scrollWindow() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <title>Computer Science Website</title>
+  <link rel="shortcut icon" href="../icon.png">
+</head>
+<body>
+  <div class="title">Unit One</div>
+  <div class="title2">Binary</div>
+  <a href="unitonetwo.html"><input class="button button1" type="button" value="Unit 1.2" /></a>
+  <h1 class="heading">Types of Signal</h1>
+  <p class="paragraph">Analogue Signal - The value of the signal varies.</p>
+  <p class="paragraph">Digital Signal - There are only two values: On or Off.</p>
+  <p class="paragraph">In binary the digital On/Off signal is represented as a 1 or a 0. These 1s and 0s are called Binary Digits or Bits. Computers have to run on binary because they run on electricity and electrical signals can only be on or off.</p>
+  <h2 class="heading">Denary</h2>
+  <p class="paragraph">Denary is the number system that we use as humans in everyday life. It is base 10 which means that each digit value going left increases by a multiple of 10. The denary system uses the digits 0 - 9.</p>
+  <h3 class="heading">Binary</h3>
+  <p class="paragraph">Binary is base 2 which means that each digit value going left increases by a multiple of 2. The binary system uses the digits 0 - 1. For GCSE Computer Science you only need to know 8-Bit which is 8 binary digits.</p>
+  <h4 class="heading">Converting from Binary to Denary</h4>
+  <p class="paragraph">To convert a binary number to denary, multiply the Bit (0 or 1) by the unit. Than add all of the resulting numbers together to get your answer.</p>
+  <table style="width: 95vw">
+    <tr>
+      <th>128s</th>
+      <th>64s</th>
+      <th>32s</th>
+      <th>16s</th>
+      <th>8s</th>
+      <th>4s</th>
+      <th>2s</th>
+      <th>1s</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1×128</td>
+      <td>0×64</td>
+      <td>1×32</td>
+      <td>0×16</td>
+      <td>1×8</td>
+      <td>0×4</td>
+      <td>1×2</td>
+      <td>0×1</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>0</td>
+      <td>32</td>
+      <td>0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+  <p class="paragraph"><span class="span3">128+32+8+2=170</span></p>
+  <h5 class="heading">Converting from Denary to Binary</h5>
+  <p class="paragraph">To convert from a denary number to binary, divide the denary number going from left to right by the unit, each time using the remainder of the previous calculation instead of the original number.</p>
+  <table style="width: 95vw">
+    <tr>
+      <td>170</td>
+      <td>42</td>
+      <td>42</td>
+      <td>10</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>128s</th>
+      <th>64s</th>
+      <th>32s</th>
+      <th>16s</th>
+      <th>8s</th>
+      <th>4s</th>
+      <th>2s</th>
+      <th>1s</th>
+    </tr>
+    <tr>
+      <td>170÷128</td>
+      <td>42÷64</td>
+      <td>42÷32</td>
+      <td>10÷16</td>
+      <td>10÷8</td>
+      <td>2÷4</td>
+      <td>2÷2</td>
+      <td>0÷1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+  <p class="paragraph">If you end up with a 2 after a division you have gone wrong. You will want the previous unit.</p>
+  <br>
+  <input class="button button1" type="button" onclick="scrollWindow()" value="Scroll to Top"/>
+  <div id="navbar">
+    <ul>
+      <li><a href="../home.html"><img src="../homeicon.png" class="home" style="height: 14px; filter: invert(100%);"> Home</a></li>
+      <li><a href="gcse.html" class="active">GCSE</a></li>
+      <li><a href="../alevel/alevel.html">A Level</a></li>
+      <li style="float: right"><a href="../about.html">About</a></li>
+      <li style="float: right"><a href="../search.html">Search</a></li>
+      <li style="float: right"><a href="../interactiveapps.html">Interactive Apps</a></li>
+    </ul>
+  </div>
+</body>
+</html>

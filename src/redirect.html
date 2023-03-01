@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Computer Science Website</title>
+    <link rel="shortcut icon" href="icon.png">
+    <script>
+      function back() {
+//        console.log(new URLSearchParams(window.location.search).get("loc"));
+        window.open(new URLSearchParams(window.location.search).get("loc"), "_self");
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="back()">Back</button>
+  </body>
+</html>

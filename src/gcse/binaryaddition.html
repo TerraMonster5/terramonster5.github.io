@@ -1,0 +1,269 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <title>Computer Science Website</title>
+  <link rel="shortcut icon" href="../icon.png">
+  <script>
+    function scrollWindow() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <div class="title">Unit One</div>
+  <div class="title2">Binary Addition and Overflow</div>
+  <a href="unitonetwo.html"><input class="button button1" type="button" value="Unit 1.2" /></a>
+  <h1 class="heading">Overflow</h1>
+  <table style="width: 70vw;">
+    <tr>
+	  <td class="blank"></td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>7</td>
+	  <td>4</td>
+	</tr>
+	<tr>
+	  <td class="blank">+</td>
+	  <td>1</td>
+	  <td>4</td>
+	  <td class="blank"></td>
+	  <td class="blank">+</td>
+	  <td>2</td>
+	  <td>7</td>
+	  <td class="blank"></td>
+	  <td class="blank">+</td>
+	  <td>3</td>
+	  <td>8</td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td>3</td>
+	  <td>7</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>6</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>1</td>
+	  <td>2</td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank">1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank overflow">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank"></td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	</tr>
+    <tr>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td class="blank">+</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td class="blank"></td>
+	  <td class="blank">+</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank">+</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank">+</td>
+	  <td>1</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank overflow">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank overflow">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank"></td>
+	</tr>
+  </table>
+  <p class="paragraph">In these calculation the circled numbers are overflow. This means that the numbers are too large for the available space.</p>
+  <h1 class="heading">Binary Addition</h1>
+  <p class="paragraph">Basic additions in binary:</p>
+  <p class="paragraph">0+0=0</p>
+  <p class="paragraph">0+1=1</p>
+  <p class="paragraph">1+1=10</p>
+  <p class="paragraph">Binary Addition is the same as denary addition but with the digits '1' and '0' only.</p>
+  <table style="width: 100%;">
+    <tr>
+	  <td class="blank"></td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td class="blank">+</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td class="blank"></td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td class="blank overflow">1</td>
+	  <td class="blank" colspan="2" style="text-align: left;">Overflow</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	  <td class="blank">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank">1</td>
+	  <td class="blank"></td>
+	  <td class="blank"></td>
+	</tr>
+  </table>
+  <input class="button button1" type="button" onclick="scrollWindow()" value="Scroll to Top" />
+  <div id="navbar">
+    <ul>
+      <li><a href="../home.html"><img src="../homeicon.png" class="home" style="height: 14px; filter: invert(100%);"> Home</a></li>
+      <li><a href="gcse.html" class="active">GCSE</a></li>
+      <li><a href="../alevel/alevel.html">A Level</a></li>
+      <li style="float: right"><a href="../about.html">About</a></li>
+      <li style="float: right"><a href="../search.html">Search</a></li>
+      <li style="float: right"><a href="../interactiveapps.html">Interactive Apps</a></li>
+    </ul>
+  </div>
+</body>
+</html>

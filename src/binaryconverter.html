@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Computer Science Website</title>
+    <link rel="shortcut icon" href="icon.png">
+    <script src="binaryconverterhead.js"></script>
+  </head>
+  <body>
+    <div class="title">Unit One</div>
+    <div class="title2">Binary Converter</div>
+    <a class="paragraph" style="text-decoration: none; color: #000000;" href="interactiveapps.html"><img src="backicon.png">Back</a>
+    <div id="binarydenary" style="display: block;">
+      <input class="button button1" type="button" onclick="hideBinary()" value="Denary to Binary"/>
+      <div style="padding: 16px;">
+        <input type="text" class="binarydenary" id="bidein" onkeyup="readBin()" placeholder="Enter a Binary Number ..."/>
+      </div>
+      <input id="binbut" class="button button1" type="button" onclick="writeDen()" value="Convert"/>
+      <p class="paragraph" id="bideout"></p>
+    </div>
+    <div id="denarybinary" style="display: none;">
+      <input class="button button1" type="button" onclick="hideDenary()" value="Binary to Denary"/>
+      <div style="padding: 16px;">
+        <input type="text" class="denarybinary" id="debiin" onkeyup="readDen()" placeholder="Enter Denary Digit ..."/>
+      </div>
+      <input id="denbut" class="button button1" type="button" onclick="writeBin()" value="Convert"/>
+      <p class="paragraph" id="debiout"></p>
+    </div>
+    <script src="binaryconverterbody.js"></script>
+    <div id="navbar">
+      <ul>
+        <li><a href="home.html"><img src="homeicon.png" class="home" style="height: 14px; filter: invert(100%);"> Home</a></li>
+        <li><a href="gcse/gcse.html">GCSE</a></li>
+        <li><a href="alevel/alevel.html">A Level</a></li>
+        <li style="float: right"><a href="about.html">About</a></li>
+        <li style="float: right"><a href="search.html">Search</a></li>
+        <li style="float: right"><a href="interactiveapps.html" class="active">Interactive Apps</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

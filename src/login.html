@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Computer Science Website</title>
+    <link rel="shortcut icon" href="icon.png">
+  </head>
+  <body style="background-color: #4c4c4c; text-align: center; margin: 0 auto;">
+    <div class="logincontainer">
+      <form onsubmit="return false">
+        <h1 style="margin-top: -5%;">Login</h1>
+        <label class="loginlabel"><b>Username</b></label><br>
+        <input class="loginfield" type="text" id="usernamein" placeholder="Enter Username..." required><br>
+        <label class="loginlabel"><b>Password</b></label><br>
+        <input class="loginfield" type="password" id="passwordin" placeholder="Enter Password..." required><br>
+        <button class="button1 smallbutton" style="font-family: bahnschrift_300;" type="submit" onclick="login()"><b>Login</b></button>
+        <button class="button1 smallbutton" style="font-family: bahnschrift_300;" type="button" onclick="back()"><b>Close</b></button>
+      </form>
+    </div>
+  </body>
+</html>
