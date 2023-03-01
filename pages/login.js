@@ -1,6 +1,6 @@
 function redirect() {
     var loc = window.location.pathname;
-    window.open("../login.html?loc=.." + loc, "_self");
+    window.open("../pages/login.html?loc=.." + loc, "_self");
 }
 
 function back() {
