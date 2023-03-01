@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: bahnschrift_300;
   background-color: #e2e2e2;

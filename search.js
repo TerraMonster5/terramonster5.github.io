@@ -2,7 +2,7 @@
 
 // Function to search list on keyup in searchbar
 function searchFunction() {
-    // Declare and asign local variables
+    // Declare and assign local variables
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById('searchbar');
     filter = input.value.toUpperCase();
